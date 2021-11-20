@@ -1,0 +1,20 @@
+# permissions for end users to view networkaddresses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: networkaddress-viewer-role
+rules:
+- apiGroups:
+  - conversion-webhook.example.zqzten.io
+  resources:
+  - networkaddresses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - conversion-webhook.example.zqzten.io
+  resources:
+  - networkaddresses/status
+  verbs:
+  - get

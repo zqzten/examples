@@ -1,0 +1,8 @@
+apiVersion: conversion-webhook.example.zqzten.io/v1
+kind: NetworkAddress
+metadata:
+  name: sample
+spec:
+  domain: test.zqzten.io
+  port: "80"
+  note: test

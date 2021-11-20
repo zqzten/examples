@@ -1,0 +1,7 @@
+apiVersion: conversion-webhook.example.zqzten.io/v2
+kind: NetworkAddress
+metadata:
+  name: sample
+spec:
+  address: user2.zqzten.io:80
+  hostType: domain

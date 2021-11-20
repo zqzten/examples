@@ -1,0 +1,26 @@
+domain: example.zqzten.io
+layout:
+- go.kubebuilder.io/v3
+projectName: conversion-webhook
+repo: github.com/zqzten/examples/conversion-webhook
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: example.zqzten.io
+  group: conversion-webhook
+  kind: NetworkAddress
+  path: github.com/zqzten/examples/conversion-webhook/api/v1
+  version: v1
+  webhooks:
+    conversion: true
+    webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: example.zqzten.io
+  group: conversion-webhook
+  kind: NetworkAddress
+  path: github.com/zqzten/examples/conversion-webhook/api/v2
+  version: v2
+version: "3"
